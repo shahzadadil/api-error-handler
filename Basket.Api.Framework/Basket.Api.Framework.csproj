@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Basket.Framework\Basket.Framework.csproj" />
+    <ProjectReference Include="..\Basket.Framework\Basket.Framework.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Basket.Api.Framework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,12 +32,23 @@ namespace Basket.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            // Initialise settings if you need to change anything
+            var apiErrorSettings = new ApiErrorSettings
+            {
+                Serialization = new SerializationSettings
+                {
+                    UseCamelCase = true
+                }
+            };
+
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                // Register the middleware to handle your errors
+                app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
             }
             else
             {
+                app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
