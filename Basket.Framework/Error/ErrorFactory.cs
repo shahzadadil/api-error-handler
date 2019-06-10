@@ -6,13 +6,13 @@ namespace Basket.Framework.Error
     public static class ErrorFactory
     {
         public static ErrorDetail ToErrorDetail(
-            int httpStatusCode,
+            int errorCode,
             string message,
             string description = null,
             IDictionary<string, object> metadata = null,
             Exception exception = null)
         {
-            return new ErrorDetail(httpStatusCode)
+            return new ErrorDetail(errorCode)
             {
                 Message = message,
                 Description = description,
