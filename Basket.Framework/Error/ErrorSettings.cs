@@ -2,17 +2,17 @@
 {
     public class ErrorSettings
     {
-        public MessageSettings Message => new MessageSettings();
-        public LoggingSettings Logging => new LoggingSettings();
+        public MessageSettings Message { get; set; } = new MessageSettings();
+        public LoggingSettings Logging { get; set; } = new LoggingSettings();
     }
 
     public class MessageSettings
     {
-        public bool IncludeExceptionDetail => false;
+        public bool IncludeExceptionDetail { get; set; } = false;
     }
 
     public class LoggingSettings
     {
-        public bool LogErrors => false;
+        public bool LogErrors { get; set; } = false;
     }
 }
