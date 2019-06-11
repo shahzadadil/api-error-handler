@@ -13,11 +13,6 @@ namespace Basket.Api.Framework
             IDictionary<string, object> metadata = null,
             Exception exception = null)
         {
-            if (string.IsNullOrWhiteSpace(message))
-            {
-                throw new ArgumentNullException("Message is required");
-            }
-
             return ApiResponseFactory.ToObjectResult(
                 HttpStatusCode.NotFound,
                 message,
@@ -32,11 +27,6 @@ namespace Basket.Api.Framework
             IDictionary<string, object> metadata = null,
             Exception exception = null)
         {
-            if (string.IsNullOrWhiteSpace(message))
-            {
-                throw new ArgumentNullException("Message is required");
-            }
-
             return ApiResponseFactory.ToObjectResult(
                 HttpStatusCode.BadRequest,
                 message,
@@ -51,11 +41,6 @@ namespace Basket.Api.Framework
             IDictionary<string, object> metadata = null,
             Exception exception = null)
         {
-            if (string.IsNullOrWhiteSpace(message))
-            {
-                throw new ArgumentNullException("Message is required");
-            }
-
             return ApiResponseFactory.ToObjectResult(
                 HttpStatusCode.Forbidden,
                 message,
@@ -70,11 +55,6 @@ namespace Basket.Api.Framework
             IDictionary<string, object> metadata = null,
             Exception exception = null)
         {
-            if (string.IsNullOrWhiteSpace(message))
-            {
-                throw new ArgumentNullException("Message is required");
-            }
-
             return ApiResponseFactory.ToObjectResult(
                 HttpStatusCode.NoContent,
                 message,
@@ -89,11 +69,6 @@ namespace Basket.Api.Framework
             IDictionary<string, object> metadata = null,
             Exception exception = null)
         {
-            if (string.IsNullOrWhiteSpace(message))
-            {
-                throw new ArgumentNullException("Message is required");
-            }
-
             return ApiResponseFactory.ToObjectResult(
                 HttpStatusCode.Unauthorized,
                 message,
@@ -108,13 +83,22 @@ namespace Basket.Api.Framework
             IDictionary<string, object> metadata = null,
             Exception exception = null)
         {
-            if (string.IsNullOrWhiteSpace(message))
-            {
-                throw new ArgumentNullException("Message is required");
-            }
-
             return ApiResponseFactory.ToObjectResult(
                 HttpStatusCode.Conflict,
+                message,
+                description,
+                metadata,
+                exception);
+        }
+
+        public static IActionResult InternalServerError(
+            string message,
+            string description = null,
+            IDictionary<string, object> metadata = null,
+            Exception exception = null)
+        {
+            return ApiResponseFactory.ToObjectResult(
+                HttpStatusCode.InternalServerError,
                 message,
                 description,
                 metadata,
