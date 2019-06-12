@@ -38,17 +38,17 @@ namespace Basket.Api
                 Serialization = new SerializationSettings
                 {
                     UseCamelCase = true
+                },
+                Message = new Basket.Framework.Error.MessageSettings
+                {
+                    IncludeExceptionDetail = true
                 }
             };
 
-            if (env.IsDevelopment())
+            app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
+
+            if (!env.IsDevelopment())
             {
-                // Register the middleware to handle your errors
-                app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
-            }
-            else
-            {
-                app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }

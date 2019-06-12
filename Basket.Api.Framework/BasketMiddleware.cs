@@ -39,9 +39,14 @@ namespace Basket.Api.Framework
 
                 _Logger.LogError(exception, errorMessage);
 
+                var exceptionInResponse = _ApiErrorSettings.Message.IncludeExceptionDetail
+                    ? exception
+                    : (Exception)null;
+
                 var errorDetail = ErrorFactory.ToErrorDetail(
                     (int)HttpStatusCode.InternalServerError,
-                    errorMessage);
+                    errorMessage,
+                    exception: exceptionInResponse);
 
                 httpContext.Response.ContentType = "application/json";
                 httpContext.Response.StatusCode = errorDetail.StatusCode;
