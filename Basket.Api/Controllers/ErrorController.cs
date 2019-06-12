@@ -36,13 +36,13 @@ namespace Basket.Api.Controllers
         [Route("unauthorized")]
         public async Task<IActionResult> Unauthorized()
         {
-            return ApiResponse.Unauthorized("No content error");
+            return ApiResponse.Unauthorized("Unauthorized error");
         }
 
         [Route("conflict")]
         public async Task<IActionResult> Conflict()
         {
-            return ApiResponse.Unauthorized("Conflict error");
+            return ApiResponse.Conflict("Conflict error");
         }
 
         [Route("random")]
