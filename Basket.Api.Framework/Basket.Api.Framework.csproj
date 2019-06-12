@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Shahzad Adil</Authors>
+    <Product>Basket API Error Handler</Product>
+    <Description>Allows developers to handle API errors thorugh a middleware and returns a consistent repsonse in case of errors rather than implementing their own solutions. There is also less fragmentation and no inconsistencies in repsonse as it follows a pre decided structure.</Description>
+    <Copyright>NA</Copyright>
+    <PackageLicenseUrl>NA</PackageLicenseUrl>
+    <PackageProjectUrl>NA</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/shahzadadil/api-error-handler</RepositoryUrl>
+    <PackageIconUrl>https://github.com/shahzadadil/api-error-handler/tree/master/Resources/Images/basket-icon-100.png</PackageIconUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageTags>error-handler, api-error, .net-core,.net-standard</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
