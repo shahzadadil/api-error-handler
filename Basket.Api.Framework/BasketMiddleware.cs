@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Basket.Api.Framework
 {
+    /// <summary>
+    /// Middleware to centrally handle exceptions in the API in all layers
+    /// </summary>
     public class BasketMiddleware
     {
         private readonly RequestDelegate _NextRequest = null;
