@@ -2,7 +2,12 @@
 
 namespace Basket.Api.Framework
 {
-    public class ApiErrorSettings : ErrorSettings
+    public interface IApiErrorSettings
+    {
+
+    }
+
+    public class ApiErrorSettings : ErrorSettings, IApiErrorSettings
     {
         public SerializationSettings Serialization { get; set; } = new SerializationSettings();
     }

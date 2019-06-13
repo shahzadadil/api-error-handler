@@ -14,6 +14,12 @@ namespace Basket.Api.IntegrationTests
             get { return "error"; }
         }
 
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            CreateClient();
+        }
+
         [TestMethod]
         public async Task NotFound_TestResponse_ReturnsResponse()
         {
