@@ -8,6 +8,15 @@ namespace Basket.Api.Framework
 {
     public static class ApiResponseFactory
     {
+        /// <summary>
+        /// Creates a custom API response
+        /// </summary>
+        /// <param name="httpStatusCode">The HTTP status code for the response</param>
+        /// <param name="message">Message to show</param>
+        /// <param name="description">Description about the error</param>
+        /// <param name="metadata">Key value pairs of other data</param>
+        /// <param name="exception">Details of the exception that was raised</param>
+        /// <returns></returns>
         public static ObjectResult ToObjectResult(
             HttpStatusCode httpStatusCode,
             string message,

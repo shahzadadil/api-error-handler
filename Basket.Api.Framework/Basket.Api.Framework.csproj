@@ -14,6 +14,8 @@
     <PackageIconUrl>https://github.com/shahzadadil/api-error-handler/tree/master/Resources/Images/basket-icon-100.png</PackageIconUrl>
     <RepositoryType>Public</RepositoryType>
     <PackageTags>error-handler, api-error, .net-core,.net-standard</PackageTags>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
