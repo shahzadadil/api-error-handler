@@ -18,11 +18,11 @@ namespace Basket.Api.Framework
         public BasketMiddleware(
             RequestDelegate nextRequest,
             ILogger<BasketMiddleware> logger,
-            ApiErrorSettings apiErrorSettings)
+            IApiErrorSettings apiErrorSettings)
         {
             _NextRequest = nextRequest;
             _Logger = logger;
-            _ApiErrorSettings = apiErrorSettings ?? new ApiErrorSettings();
+            _ApiErrorSettings = apiErrorSettings as ApiErrorSettings ?? new ApiErrorSettings();
         }
 
         public async Task InvokeAsync(HttpContext httpContext)
@@ -41,7 +41,7 @@ namespace Basket.Api.Framework
 
                 var exceptionInResponse = _ApiErrorSettings.Message.IncludeExceptionDetail
                     ? exception
-                    : (Exception)null;
+                    : null;
 
                 var errorDetail = ErrorFactory.ToErrorDetail(
                     (int)HttpStatusCode.InternalServerError,
