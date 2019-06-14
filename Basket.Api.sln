@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.Framework", "Basket.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.Api.Framework.Tests", "Basket.Api.Framework.Tests\Basket.Api.Framework.Tests.csproj", "{9A9A6F29-66F5-4BB1-9EFF-F87DFD0D21FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Api.IntegrationTests", "Basket.Api.IntegrationTests\Basket.Api.IntegrationTests.csproj", "{43E9BF89-715F-4A6B-9C84-70B25544DFDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.Api.IntegrationTests", "Basket.Api.IntegrationTests\Basket.Api.IntegrationTests.csproj", "{43E9BF89-715F-4A6B-9C84-70B25544DFDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF8FEBA2-2863-40DE-B508-CF11563D925C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
