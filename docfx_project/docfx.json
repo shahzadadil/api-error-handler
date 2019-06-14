@@ -41,7 +41,7 @@
     "overwrite": [
       {
         "files": [
-          "../**/README.md"
+          "**/README.md"
         ],
         "exclude": [
           "obj/**",
