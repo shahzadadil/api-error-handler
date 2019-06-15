@@ -121,6 +121,24 @@ namespace Basket.Api.IntegrationTests
             Assert.AreEqual((int)HttpStatusCode.Conflict, responseData.StatusCode);
             Assert.AreEqual("Conflict error", responseData.Message);
         }
+
+        [TestMethod]
+        public async Task InternalServerError_TestResponse_ReturnsResponse()
+        {
+            //// Arrange
+            //// Act
+            var response = await _ApiClient.GetAsync($"{_BasePath}/internal-server-error");
+
+            //// Assert
+            Assert.AreEqual(HttpStatusCode.InternalServerError, response.StatusCode);
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var responseData = JsonConvert.DeserializeObject<ErrorDetail>(responseContent);
+
+            Assert.AreEqual((int)HttpStatusCode.InternalServerError, responseData.StatusCode);
+            Assert.AreEqual("Internal Server error", responseData.Message);
+        }
+
         [TestMethod]
         public async Task Random_TestResponse_ReturnsResponse()
         {

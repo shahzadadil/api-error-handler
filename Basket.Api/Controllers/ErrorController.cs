@@ -45,6 +45,12 @@ namespace Basket.Api.Controllers
             return ApiResponse.Conflict("Conflict error");
         }
 
+        [Route("internal-server-error")]
+        public async Task<IActionResult> InteernalServerError()
+        {
+            return ApiResponse.InternalServerError("Internal Server error");
+        }
+
         [Route("random")]
         public async Task<IActionResult> Random()
         {
