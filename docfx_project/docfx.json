@@ -5,7 +5,7 @@
         {
           "files": [
             "**/Basket.Api.Framework.csproj"
-          ].
+          ],
 		  "src": "../"
         }
       ],
