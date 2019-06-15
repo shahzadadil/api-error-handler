@@ -86,4 +86,4 @@ The response data for the errors is returned in the format below
 In case you need the response in Pascal casing, you can change that from Error Settings
 
 ## More Details
-More details can be viewed on [Wiki][https://github.com/shahzadadil/api-error-handler/wiki]
+More details can be viewed on [Wiki](https://github.com/shahzadadil/api-error-handler/wiki)
