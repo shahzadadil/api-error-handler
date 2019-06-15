@@ -1,0 +1,228 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Basket.Api.Framework
+  name: Basket.Api.Framework
+  href: api/Basket.Api.Framework.html
+  commentId: N:Basket.Api.Framework
+  fullName: Basket.Api.Framework
+  nameWithType: Basket.Api.Framework
+- uid: Basket.Api.Framework.ApiErrorSettings
+  name: ApiErrorSettings
+  href: api/Basket.Api.Framework.ApiErrorSettings.html
+  commentId: T:Basket.Api.Framework.ApiErrorSettings
+  fullName: Basket.Api.Framework.ApiErrorSettings
+  nameWithType: ApiErrorSettings
+- uid: Basket.Api.Framework.ApiErrorSettings.Serialization
+  name: Serialization
+  href: api/Basket.Api.Framework.ApiErrorSettings.html#Basket_Api_Framework_ApiErrorSettings_Serialization
+  commentId: P:Basket.Api.Framework.ApiErrorSettings.Serialization
+  fullName: Basket.Api.Framework.ApiErrorSettings.Serialization
+  nameWithType: ApiErrorSettings.Serialization
+- uid: Basket.Api.Framework.ApiErrorSettings.Serialization*
+  name: Serialization
+  href: api/Basket.Api.Framework.ApiErrorSettings.html#Basket_Api_Framework_ApiErrorSettings_Serialization_
+  commentId: Overload:Basket.Api.Framework.ApiErrorSettings.Serialization
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiErrorSettings.Serialization
+  nameWithType: ApiErrorSettings.Serialization
+- uid: Basket.Api.Framework.ApiResponse
+  name: ApiResponse
+  href: api/Basket.Api.Framework.ApiResponse.html
+  commentId: T:Basket.Api.Framework.ApiResponse
+  fullName: Basket.Api.Framework.ApiResponse
+  nameWithType: ApiResponse
+- uid: Basket.Api.Framework.ApiResponse.BadRequest(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: BadRequest(String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_BadRequest_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponse.BadRequest(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: BadRequest(String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponse.BadRequest(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponse.BadRequest(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponse.BadRequest(String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponse.BadRequest(String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponse.BadRequest*
+  name: BadRequest
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_BadRequest_
+  commentId: Overload:Basket.Api.Framework.ApiResponse.BadRequest
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponse.BadRequest
+  nameWithType: ApiResponse.BadRequest
+- uid: Basket.Api.Framework.ApiResponse.Conflict(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: Conflict(String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_Conflict_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponse.Conflict(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: Conflict(String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponse.Conflict(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponse.Conflict(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponse.Conflict(String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponse.Conflict(String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponse.Conflict*
+  name: Conflict
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_Conflict_
+  commentId: Overload:Basket.Api.Framework.ApiResponse.Conflict
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponse.Conflict
+  nameWithType: ApiResponse.Conflict
+- uid: Basket.Api.Framework.ApiResponse.Forbidden(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: Forbidden(String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_Forbidden_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponse.Forbidden(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: Forbidden(String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponse.Forbidden(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponse.Forbidden(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponse.Forbidden(String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponse.Forbidden(String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponse.Forbidden*
+  name: Forbidden
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_Forbidden_
+  commentId: Overload:Basket.Api.Framework.ApiResponse.Forbidden
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponse.Forbidden
+  nameWithType: ApiResponse.Forbidden
+- uid: Basket.Api.Framework.ApiResponse.InternalServerError(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: InternalServerError(String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_InternalServerError_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponse.InternalServerError(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: InternalServerError(String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponse.InternalServerError(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponse.InternalServerError(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponse.InternalServerError(String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponse.InternalServerError(String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponse.InternalServerError*
+  name: InternalServerError
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_InternalServerError_
+  commentId: Overload:Basket.Api.Framework.ApiResponse.InternalServerError
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponse.InternalServerError
+  nameWithType: ApiResponse.InternalServerError
+- uid: Basket.Api.Framework.ApiResponse.NoContent(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: NoContent(String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_NoContent_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponse.NoContent(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: NoContent(String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponse.NoContent(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponse.NoContent(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponse.NoContent(String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponse.NoContent(String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponse.NoContent*
+  name: NoContent
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_NoContent_
+  commentId: Overload:Basket.Api.Framework.ApiResponse.NoContent
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponse.NoContent
+  nameWithType: ApiResponse.NoContent
+- uid: Basket.Api.Framework.ApiResponse.NotFound(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: NotFound(String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_NotFound_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponse.NotFound(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: NotFound(String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponse.NotFound(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponse.NotFound(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponse.NotFound(String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponse.NotFound(String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponse.NotFound*
+  name: NotFound
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_NotFound_
+  commentId: Overload:Basket.Api.Framework.ApiResponse.NotFound
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponse.NotFound
+  nameWithType: ApiResponse.NotFound
+- uid: Basket.Api.Framework.ApiResponse.Unauthorized(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: Unauthorized(String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_Unauthorized_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponse.Unauthorized(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: Unauthorized(String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponse.Unauthorized(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponse.Unauthorized(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponse.Unauthorized(String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponse.Unauthorized(String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponse.Unauthorized*
+  name: Unauthorized
+  href: api/Basket.Api.Framework.ApiResponse.html#Basket_Api_Framework_ApiResponse_Unauthorized_
+  commentId: Overload:Basket.Api.Framework.ApiResponse.Unauthorized
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponse.Unauthorized
+  nameWithType: ApiResponse.Unauthorized
+- uid: Basket.Api.Framework.ApiResponseFactory
+  name: ApiResponseFactory
+  href: api/Basket.Api.Framework.ApiResponseFactory.html
+  commentId: T:Basket.Api.Framework.ApiResponseFactory
+  fullName: Basket.Api.Framework.ApiResponseFactory
+  nameWithType: ApiResponseFactory
+- uid: Basket.Api.Framework.ApiResponseFactory.ToObjectResult(System.Net.HttpStatusCode,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name: ToObjectResult(HttpStatusCode, String, String, IDictionary<String, Object>, Exception)
+  href: api/Basket.Api.Framework.ApiResponseFactory.html#Basket_Api_Framework_ApiResponseFactory_ToObjectResult_System_Net_HttpStatusCode_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_Exception_
+  commentId: M:Basket.Api.Framework.ApiResponseFactory.ToObjectResult(System.Net.HttpStatusCode,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception)
+  name.vb: ToObjectResult(HttpStatusCode, String, String, IDictionary(Of String, Object), Exception)
+  fullName: Basket.Api.Framework.ApiResponseFactory.ToObjectResult(System.Net.HttpStatusCode, System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.Object>, System.Exception)
+  fullName.vb: Basket.Api.Framework.ApiResponseFactory.ToObjectResult(System.Net.HttpStatusCode, System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Exception)
+  nameWithType: ApiResponseFactory.ToObjectResult(HttpStatusCode, String, String, IDictionary<String, Object>, Exception)
+  nameWithType.vb: ApiResponseFactory.ToObjectResult(HttpStatusCode, String, String, IDictionary(Of String, Object), Exception)
+- uid: Basket.Api.Framework.ApiResponseFactory.ToObjectResult*
+  name: ToObjectResult
+  href: api/Basket.Api.Framework.ApiResponseFactory.html#Basket_Api_Framework_ApiResponseFactory_ToObjectResult_
+  commentId: Overload:Basket.Api.Framework.ApiResponseFactory.ToObjectResult
+  isSpec: "True"
+  fullName: Basket.Api.Framework.ApiResponseFactory.ToObjectResult
+  nameWithType: ApiResponseFactory.ToObjectResult
+- uid: Basket.Api.Framework.BasketMiddleware
+  name: BasketMiddleware
+  href: api/Basket.Api.Framework.BasketMiddleware.html
+  commentId: T:Basket.Api.Framework.BasketMiddleware
+  fullName: Basket.Api.Framework.BasketMiddleware
+  nameWithType: BasketMiddleware
+- uid: Basket.Api.Framework.BasketMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{Basket.Api.Framework.BasketMiddleware},Basket.Api.Framework.IApiErrorSettings)
+  name: BasketMiddleware(RequestDelegate, ILogger<BasketMiddleware>, IApiErrorSettings)
+  href: api/Basket.Api.Framework.BasketMiddleware.html#Basket_Api_Framework_BasketMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_Microsoft_Extensions_Logging_ILogger_Basket_Api_Framework_BasketMiddleware__Basket_Api_Framework_IApiErrorSettings_
+  commentId: M:Basket.Api.Framework.BasketMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{Basket.Api.Framework.BasketMiddleware},Basket.Api.Framework.IApiErrorSettings)
+  name.vb: BasketMiddleware(RequestDelegate, ILogger(Of BasketMiddleware), IApiErrorSettings)
+  fullName: Basket.Api.Framework.BasketMiddleware.BasketMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILogger<Basket.Api.Framework.BasketMiddleware>, Basket.Api.Framework.IApiErrorSettings)
+  fullName.vb: Basket.Api.Framework.BasketMiddleware.BasketMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILogger(Of Basket.Api.Framework.BasketMiddleware), Basket.Api.Framework.IApiErrorSettings)
+  nameWithType: BasketMiddleware.BasketMiddleware(RequestDelegate, ILogger<BasketMiddleware>, IApiErrorSettings)
+  nameWithType.vb: BasketMiddleware.BasketMiddleware(RequestDelegate, ILogger(Of BasketMiddleware), IApiErrorSettings)
+- uid: Basket.Api.Framework.BasketMiddleware.#ctor*
+  name: BasketMiddleware
+  href: api/Basket.Api.Framework.BasketMiddleware.html#Basket_Api_Framework_BasketMiddleware__ctor_
+  commentId: Overload:Basket.Api.Framework.BasketMiddleware.#ctor
+  isSpec: "True"
+  fullName: Basket.Api.Framework.BasketMiddleware.BasketMiddleware
+  nameWithType: BasketMiddleware.BasketMiddleware
+- uid: Basket.Api.Framework.BasketMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: InvokeAsync(HttpContext)
+  href: api/Basket.Api.Framework.BasketMiddleware.html#Basket_Api_Framework_BasketMiddleware_InvokeAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:Basket.Api.Framework.BasketMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: Basket.Api.Framework.BasketMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: BasketMiddleware.InvokeAsync(HttpContext)
+- uid: Basket.Api.Framework.BasketMiddleware.InvokeAsync*
+  name: InvokeAsync
+  href: api/Basket.Api.Framework.BasketMiddleware.html#Basket_Api_Framework_BasketMiddleware_InvokeAsync_
+  commentId: Overload:Basket.Api.Framework.BasketMiddleware.InvokeAsync
+  isSpec: "True"
+  fullName: Basket.Api.Framework.BasketMiddleware.InvokeAsync
+  nameWithType: BasketMiddleware.InvokeAsync
+- uid: Basket.Api.Framework.IApiErrorSettings
+  name: IApiErrorSettings
+  href: api/Basket.Api.Framework.IApiErrorSettings.html
+  commentId: T:Basket.Api.Framework.IApiErrorSettings
+  fullName: Basket.Api.Framework.IApiErrorSettings
+  nameWithType: IApiErrorSettings
+- uid: Basket.Api.Framework.SerializationSettings
+  name: SerializationSettings
+  href: api/Basket.Api.Framework.SerializationSettings.html
+  commentId: T:Basket.Api.Framework.SerializationSettings
+  fullName: Basket.Api.Framework.SerializationSettings
+  nameWithType: SerializationSettings
+- uid: Basket.Api.Framework.SerializationSettings.UseCamelCase
+  name: UseCamelCase
+  href: api/Basket.Api.Framework.SerializationSettings.html#Basket_Api_Framework_SerializationSettings_UseCamelCase
+  commentId: P:Basket.Api.Framework.SerializationSettings.UseCamelCase
+  fullName: Basket.Api.Framework.SerializationSettings.UseCamelCase
+  nameWithType: SerializationSettings.UseCamelCase
+- uid: Basket.Api.Framework.SerializationSettings.UseCamelCase*
+  name: UseCamelCase
+  href: api/Basket.Api.Framework.SerializationSettings.html#Basket_Api_Framework_SerializationSettings_UseCamelCase_
+  commentId: Overload:Basket.Api.Framework.SerializationSettings.UseCamelCase
+  isSpec: "True"
+  fullName: Basket.Api.Framework.SerializationSettings.UseCamelCase
+  nameWithType: SerializationSettings.UseCamelCase
