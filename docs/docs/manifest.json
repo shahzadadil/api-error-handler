@@ -1,0 +1,164 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.ApiErrorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.ApiErrorSettings.html",
+          "hash": "rUOGe4r4ycPoMw089v82tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.ApiResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.ApiResponse.html",
+          "hash": "m7ghCY/9d+moZGCozm2E3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.ApiResponseFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.ApiResponseFactory.html",
+          "hash": "fa4GbvFTWFQ0iYKmdL8GBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.BasketMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.BasketMiddleware.html",
+          "hash": "xJss4CUDABoWObHiUhssoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.IApiErrorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.IApiErrorSettings.html",
+          "hash": "gYX/HuYK2zSGdP+pNm38YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.SerializationSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.SerializationSettings.html",
+          "hash": "R+dK4B05NsXUxYdiY4K8bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.html",
+          "hash": "kBlGhwvYnM+uSFuwsRk94A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "VH951s4IeFLQs/2ZrbP3Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "P7/5ZSYR3zpesRQKu7LCnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 7,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
