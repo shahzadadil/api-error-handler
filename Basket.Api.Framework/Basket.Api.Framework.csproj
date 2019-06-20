@@ -11,9 +11,9 @@
     <PackageLicenseUrl>NA</PackageLicenseUrl>
     <PackageProjectUrl>NA</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shahzadadil/api-error-handler</RepositoryUrl>
-    <PackageIconUrl>https://github.com/shahzadadil/api-error-handler/tree/master/Resources/Images/basket-icon-100.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/shahzadadil/api-error-handler/release/Resources/Images/basket-icon-100.png</PackageIconUrl>
     <RepositoryType>Public</RepositoryType>
-    <PackageTags>error-handler, api-error, .net-core,.net-standard</PackageTags>
+    <PackageTags>error-handler, api-error, .net-core,.net-standard,api,.net-standard,error,api-error-handler,middleware,exception-handler,error-handler,api-response,error-response,error-handler-middleware</PackageTags>
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
     <FileVersion>1.0.2.0</FileVersion>
     <Version>1.0.2</Version>
