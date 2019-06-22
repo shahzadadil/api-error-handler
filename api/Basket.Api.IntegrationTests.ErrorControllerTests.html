@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ErrorControllerTests
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ErrorControllerTests
+   ">
+    <meta name="generator" content="docfx 2.43.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests">
+  
+  
+  <h1 id="Basket_Api_IntegrationTests_ErrorControllerTests" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests" class="text-break">Class ErrorControllerTests
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Basket.Api.IntegrationTests.ApiTestBase.html">ApiTestBase</a></div>
+    <div class="level2"><span class="xref">ErrorControllerTests</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Basket.Api.IntegrationTests.ApiTestBase.html#Basket_Api_IntegrationTests_ApiTestBase__ApiFactory">ApiTestBase._ApiFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="Basket.Api.IntegrationTests.ApiTestBase.html#Basket_Api_IntegrationTests_ApiTestBase__ApiClient">ApiTestBase._ApiClient</a>
+    </div>
+    <div>
+      <a class="xref" href="Basket.Api.IntegrationTests.ApiTestBase.html#Basket_Api_IntegrationTests_ApiTestBase__BasePath">ApiTestBase._BasePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Basket.Api.IntegrationTests.ApiTestBase.html#Basket_Api_IntegrationTests_ApiTestBase_CreateClient_Basket_Api_Framework_IApiErrorSettings_">ApiTestBase.CreateClient(IApiErrorSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="Basket.Api.IntegrationTests.ApiTestBase.html#Basket_Api_IntegrationTests_ApiTestBase_TestCleanup">ApiTestBase.TestCleanup()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Basket.Api.IntegrationTests.html">Basket.Api.IntegrationTests</a></h6>
+  <h6><strong>Assembly</strong>: Basket.Api.IntegrationTests.dll</h6>
+  <h5 id="Basket_Api_IntegrationTests_ErrorControllerTests_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class ErrorControllerTests : ApiTestBase</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests__ControllerRoute.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests._ControllerRoute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L12">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests__ControllerRoute_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests._ControllerRoute*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests__ControllerRoute" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests._ControllerRoute">_ControllerRoute</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string _ControllerRoute { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Basket.Api.IntegrationTests.ApiTestBase.html#Basket_Api_IntegrationTests_ApiTestBase__ControllerRoute">ApiTestBase._ControllerRoute</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_BadRequest_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.BadRequest_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L40">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_BadRequest_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.BadRequest_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_BadRequest_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.BadRequest_TestResponse_ReturnsResponse">BadRequest_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task BadRequest_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_Conflict_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.Conflict_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L108">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_Conflict_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Conflict_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_Conflict_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Conflict_TestResponse_ReturnsResponse">Conflict_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task Conflict_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_Forbidden_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.Forbidden_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L57">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_Forbidden_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Forbidden_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_Forbidden_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Forbidden_TestResponse_ReturnsResponse">Forbidden_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task Forbidden_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_InternalServerError_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.InternalServerError_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L125">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_InternalServerError_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.InternalServerError_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_InternalServerError_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.InternalServerError_TestResponse_ReturnsResponse">InternalServerError_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task InternalServerError_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_NoContent_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.NoContent_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L74">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_NoContent_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.NoContent_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_NoContent_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.NoContent_TestResponse_ReturnsResponse">NoContent_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task NoContent_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_NotFound_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.NotFound_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L23">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_NotFound_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.NotFound_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_NotFound_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.NotFound_TestResponse_ReturnsResponse">NotFound_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task NotFound_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_Random_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.Random_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L142">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_Random_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Random_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_Random_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Random_TestResponse_ReturnsResponse">Random_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task Random_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_TestInitialize.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.TestInitialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L17">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_TestInitialize_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.TestInitialize*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_TestInitialize" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.TestInitialize">TestInitialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void TestInitialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests_Unauthorized_TestResponse_ReturnsResponse.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests.Unauthorized_TestResponse_ReturnsResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L91">View Source</a>
+  </span>
+  <a id="Basket_Api_IntegrationTests_ErrorControllerTests_Unauthorized_TestResponse_ReturnsResponse_" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Unauthorized_TestResponse_ReturnsResponse*"></a>
+  <h4 id="Basket_Api_IntegrationTests_ErrorControllerTests_Unauthorized_TestResponse_ReturnsResponse" data-uid="Basket.Api.IntegrationTests.ErrorControllerTests.Unauthorized_TestResponse_ReturnsResponse">Unauthorized_TestResponse_ReturnsResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public Task Unauthorized_TestResponse_ReturnsResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/shahzadadil/api-error-handler/new/release/apiSpec/new?filename=Basket_Api_IntegrationTests_ErrorControllerTests.md&amp;value=---%0Auid%3A%20Basket.Api.IntegrationTests.ErrorControllerTests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shahzadadil/api-error-handler/blob/release/Basket.Api.IntegrationTests/ErrorControllerTests.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
