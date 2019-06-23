@@ -6,17 +6,24 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Shahzad Adil</Authors>
     <Product>Basket API Error Handler</Product>
-    <Description>Allows developers to handle API errors thorugh a middleware and returns a consistent repsonse in case of errors rather than implementing their own solutions. There is also less fragmentation and no inconsistencies in repsonse as it follows a pre decided structure.</Description>
+    <Description>Allows developers to handle API errors thorugh a middleware and returns a consistent repsonse in case of errors rather than implementing their own solutions. There is also less fragmentation and no inconsistencies in repsonse as it follows a pre decided structure.
+Users can just register an inbuilt middleware to handle all exceptions and errors and it will automatically catch all errors and return response in a fixed format everytime. There are also a lot of factory methods available that can be used to return error. No more hassles and confusions on how to catch, format and return error responses.</Description>
     <Copyright>NA</Copyright>
     <PackageLicenseUrl>NA</PackageLicenseUrl>
-    <PackageProjectUrl>NA</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/shahzadadil/api-error-handler</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shahzadadil/api-error-handler</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/shahzadadil/api-error-handler/release/Resources/Images/basket-icon-100.png</PackageIconUrl>
     <RepositoryType>Public</RepositoryType>
     <PackageTags>error-handler, api-error, .net-core,.net-standard,api,.net-standard,error,api-error-handler,middleware,exception-handler,error-handler,api-response,error-response,error-handler-middleware</PackageTags>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+    <Version>1.0.3</Version>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>BasketCertificate.pfx</AssemblyOriginatorKeyFile>
+    <PackageReleaseNotes>Added a few error response methods
+Added documentation
+Updated package metadata</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
