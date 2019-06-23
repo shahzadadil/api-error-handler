@@ -1,5 +1,5 @@
 
-# API Error Handler [![Build Status](https://shahzadadil.visualstudio.com/API%20Error%20Handler/_apis/build/status/Master%20Branch%20CI?branchName=master)](https://shahzadadil.visualstudio.com/API%20Error%20Handler/_build/latest?definitionId=7&branchName=master)
+# API Error Handler [![Build Status](https://shahzadadil.visualstudio.com/API%20Error%20Handler/_apis/build/status/Release%20Branch%20CI?branchName=release)](https://shahzadadil.visualstudio.com/API%20Error%20Handler/_build/latest?definitionId=8&branchName=release)
 Error handling is a cumbersome task and often neglected. That leads to fragmentation and inconsistent responses. This aims to handle the problem. It provides an error framework which can just be plugged in with a few lines of code and you are set to go.
 This repo targets to tackle the issue and provides with a framework to seamlessly handle error and send reponses back in a consistent structure that is fixeed for all errors. Devs now dont have to worry about error handling or setting up a framework to do that or deciding on a structure. Everything is done to just get you started. It also provides a middleware just to allow you to register it and you are done :)
 
