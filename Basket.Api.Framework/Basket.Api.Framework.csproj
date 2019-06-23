@@ -18,7 +18,7 @@ Users can just register an inbuilt middleware to handle all exceptions and error
     <AssemblyVersion>1.0.3.0</AssemblyVersion>
     <FileVersion>1.0.3.0</FileVersion>
     <Version>1.0.3</Version>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
     <AssemblyOriginatorKeyFile>BasketCertificate.pfx</AssemblyOriginatorKeyFile>
     <PackageReleaseNotes>Added a few error response methods
