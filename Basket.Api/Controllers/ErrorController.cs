@@ -56,5 +56,11 @@ namespace Basket.Api.Controllers
         {
             throw new InvalidOperationException("Random exception");
         }
+
+        [Route("random-empty-message")]
+        public async Task<IActionResult> RandomEmptyMessage()
+        {
+            throw new InvalidOperationException("");
+        }
     }
 }
