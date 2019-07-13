@@ -46,7 +46,7 @@ namespace Basket.Api.Controllers
         }
 
         [Route("internal-server-error")]
-        public async Task<IActionResult> InteernalServerError()
+        public async Task<IActionResult> InternalServerError()
         {
             return ApiResponse.InternalServerError("Internal Server error");
         }
@@ -55,6 +55,12 @@ namespace Basket.Api.Controllers
         public async Task<IActionResult> Random()
         {
             throw new InvalidOperationException("Random exception");
+        }
+
+        [Route("random-empty-message")]
+        public async Task<IActionResult> RandomEmptyMessage()
+        {
+            throw new InvalidOperationException("");
         }
     }
 }

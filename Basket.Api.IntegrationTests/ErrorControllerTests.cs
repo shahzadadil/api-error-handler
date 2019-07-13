@@ -156,5 +156,22 @@ namespace Basket.Api.IntegrationTests
             Assert.AreEqual("Random exception", responseData.Message);
         }
 
+        [TestMethod]
+        public async Task RandomEmptyMessage_TestResponse_ReturnsResponse()
+        {
+            //// Arrange
+            //// Act
+            var response = await _ApiClient.GetAsync($"{_BasePath}/random-empty-message");
+
+            //// Assert
+            Assert.AreEqual(HttpStatusCode.InternalServerError, response.StatusCode);
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var responseData = JsonConvert.DeserializeObject<ErrorDetail>(responseContent);
+
+            Assert.AreEqual((int)HttpStatusCode.InternalServerError, responseData.StatusCode);
+            Assert.AreEqual("An error has occurred", responseData.Message);
+        }
+
     }
 }

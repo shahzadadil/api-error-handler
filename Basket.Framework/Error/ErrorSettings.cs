@@ -1,4 +1,6 @@
-﻿namespace Basket.Framework.Error
+﻿using Basket.Framework.Logging;
+
+namespace Basket.Framework.Error
 {
     /// <summary>
     /// Error settings for the framework
@@ -15,13 +17,5 @@
     public class MessageSettings
     {
         public bool IncludeExceptionDetail { get; set; } = false;
-    }
-
-    /// <summary>
-    /// Settings related to logging of error detail
-    /// </summary>
-    public class LoggingSettings
-    {
-        public bool LogErrors { get; set; } = false;
-    }
+    }    
 }

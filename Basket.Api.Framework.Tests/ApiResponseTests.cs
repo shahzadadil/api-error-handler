@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 
 namespace Basket.Api.Framework.Tests
 {
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class ApiResponseTests
     {
         [TestMethod]
@@ -16,7 +18,7 @@ namespace Basket.Api.Framework.Tests
         {
             //// Arrange
             //// Act
-            var errorResponse = (ObjectResult)ApiResponse.NotFound("");
+            ApiResponse.NotFound("");
         }
 
         [TestMethod]
