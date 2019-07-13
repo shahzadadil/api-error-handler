@@ -37,7 +37,8 @@ The framework has a middleware inbuilt to handle all errors and you do no need t
                 }
             };
         }
-
+        
+        // The middleware registration happens here
         app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
 
         if (!env.IsDevelopment())
@@ -65,6 +66,12 @@ Now you are set up. The middleware will automatically cath all errors and return
     public async Task<IActionResult> BadRequest()
     {
         return ApiResponse.BadRequest("Bad request error");
+    }
+    
+    [Route("internal-server-error")]
+    public async Task<IActionResult> InteernalServerError()
+    {
+        return ApiResponse.InternalServerError("Internal Server error");
     }
 
 There are other methods with other error codes supported. If you cannot find a supported one, you can request an addition or just use InternalServerError method.
