@@ -46,7 +46,7 @@ namespace Basket.Api.Controllers
         }
 
         [Route("internal-server-error")]
-        public async Task<IActionResult> InteernalServerError()
+        public async Task<IActionResult> InternalServerError()
         {
             return ApiResponse.InternalServerError("Internal Server error");
         }
