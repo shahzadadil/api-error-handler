@@ -6,24 +6,26 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Shahzad Adil</Authors>
     <Product>Basket API Error Handler</Product>
-    <Description>Allows developers to handle API errors thorugh a middleware and returns a consistent response in case of errors rather than implementing their own solutions. There is also less fragmentation and no inconsistencies in repsonse as it follows a pre decided structure.
- Users can just register an inbuilt middleware to handle all exceptions and errors and it will automatically catch all errors and return response in a fixed format everytime. There are also a lot of factory methods available that can be used to return error. No more hassles and confusions on how to catch, format and return error responses.</Description>
+    <Description>Allows developers to handle API errors through middleware and returns a consistent response in case of errors rather than implementing their own solutions. There is also less fragmentation and no inconsistencies in response as it follows a pre-decided structure.
+ Users can just register an inbuilt middleware to handle all exceptions and errors and it will automatically catch all errors and return response in a fixed format every time. There are also a lot of factory methods available that can be used to return an error. No more hassles and confusions on how to catch, format and return error responses.
+Contains support for error handling middleware, factory methods for responses, logging support to use the registered logger.</Description>
     <Copyright>NA</Copyright>
     <PackageLicenseUrl>NA</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/shahzadadil/api-error-handler</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shahzadadil/api-error-handler</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/shahzadadil/api-error-handler/release/Resources/Images/basket-icon-100.png</PackageIconUrl>
     <RepositoryType>Public</RepositoryType>
-    <PackageTags>global,exception,api,dotnet,core,error,handler,.net,standard,.net-standard,middleware,exception.response,package</PackageTags>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
-    <Version>1.0.3</Version>
+    <PackageTags>global,exception,api,dotnet,core,error,handler,.net,standard,.net-standard,middleware,exception.response,package,logging,trace,tracing,ilogger</PackageTags>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
+    <Version>1.0.4</Version>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
     <AssemblyOriginatorKeyFile>BasketCertificate.pfx</AssemblyOriginatorKeyFile>
-    <PackageReleaseNotes>Added a few error response methods
-Added documentation
-Updated package metadata</PackageReleaseNotes>
+    <PackageReleaseNotes>Middleware to handle all errors, including unhandled exceptions
+Consistent and predefined format for returning errors messages to consumers/clients
+Inbuilt factory methods to return different responses with specific status codes and additional information
+Logging support to automatically log messages using the registered loggers without too many additional configurations</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

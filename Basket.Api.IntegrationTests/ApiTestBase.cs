@@ -1,6 +1,7 @@
 ﻿using Basket.Api.Framework;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Net.Http;
 
@@ -21,7 +22,8 @@ namespace Basket.Api.IntegrationTests
             }
         }
 
-        public void CreateClient(IApiErrorSettings apiErrorSettings = null)
+        public void CreateClient(
+            IApiErrorSettings apiErrorSettings = null)
         {
             apiErrorSettings = apiErrorSettings ?? new ApiErrorSettings();
 

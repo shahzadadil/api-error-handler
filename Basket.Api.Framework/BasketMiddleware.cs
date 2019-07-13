@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -18,6 +19,7 @@ namespace Basket.Api.Framework
         private readonly ILogger _Logger = null;
         private readonly ApiErrorSettings _ApiErrorSettings = null;
 
+        [ExcludeFromCodeCoverage]
         public BasketMiddleware(
             RequestDelegate nextRequest,
             ILogger<BasketMiddleware> logger,
@@ -40,7 +42,10 @@ namespace Basket.Api.Framework
                     ? "An error has occurred"
                     : exception.Message;
 
-                _Logger.LogError(exception, errorMessage);
+                if (_ApiErrorSettings.Logging.ShouldLogErrors)
+                {
+                    _Logger.LogError(exception, errorMessage);
+                }                
 
                 var exceptionInResponse = _ApiErrorSettings.Message.IncludeExceptionDetail
                     ? exception
