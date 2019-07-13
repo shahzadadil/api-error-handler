@@ -9,7 +9,7 @@ This repo targets to tackle the issue and provides with a framework to seamlessl
 
 ## What It Does
 
-It allows you to just register a middleware to handle all exceptions and to send responses back in a consistent manner that is the same for all generated errors. No need to worry about anything related to how errors will be handled. 
+It allows you to just register a middleware to handle all exceptions and to send responses back in a consistent manner that is the same for all generated errors. No need to worry about anything related to how errors will be handled.ï¿½
 
 
 
@@ -28,7 +28,7 @@ The framework for API comes bundled in a NuGet package. Download NuGetPackage
 
 
 
-    Basket.Api.Framework
+ï¿½ ï¿½ Basket.Api.Framework
 
 
 
@@ -45,74 +45,73 @@ The framework has a middleware inbuilt to handle all errors and you do not need 
 
 
 
-    public virtual void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiErrorSettings apiErrorSettings)
+ï¿½ ï¿½ public virtual void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiErrorSettings apiErrorSettings)
 
-    {
+ï¿½ ï¿½ {
 
-        // Initialise settings if you need to change anything, if not provided
+ï¿½ ï¿½ ï¿½ ï¿½ // Initialise settings if you need to change anything, if not provided
 
-        // This is optional. You can also choose to pass null
+ï¿½ ï¿½ ï¿½ ï¿½ // This is optional. You can also choose to pass null
 
-        if (apiErrorSettings == null)
+ï¿½ ï¿½ ï¿½ ï¿½ if (apiErrorSettings == null)
 
-        {
+ï¿½ ï¿½ ï¿½ ï¿½ {
 
-            apiErrorSettings = new ApiErrorSettings
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ apiErrorSettings = new ApiErrorSettings
 
-            {
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ {
 
-                Serialization = new SerializationSettings
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ Serialization = new SerializationSettings
 
-                {
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ {
 
-                    UseCamelCase = true
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ UseCamelCase = true
 
-                },
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ },
 
-                Message = new Basket.Framework.Error.MessageSettings
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ Message = new Basket.Framework.Error.MessageSettings
 
-                {
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ {
 
-                    IncludeExceptionDetail = true
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ IncludeExceptionDetail = true
 
-                }
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ }
 
-            };
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ };
 
-        }
-
-
-
-
-        app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
+ï¿½ ï¿½ ï¿½ ï¿½ }
 
 
 
 
-        if (!env.IsDevelopment())
-
-        {
-
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-
-            app.UseHsts();
-
-        }
+ï¿½ ï¿½ ï¿½ ï¿½ app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
 
 
 
 
-        app.UseHttpsRedirection();
+ï¿½ ï¿½ ï¿½ ï¿½ if (!env.IsDevelopment())
 
-        app.UseMvc();
+ï¿½ ï¿½ ï¿½ ï¿½ {
 
-    }
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+
+ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ app.UseHsts();
+
+ï¿½ ï¿½ ï¿½ ï¿½ }
 
 
 
 
-The value of **apiErrorSettings**  define the settings for error handling. It is optional.
+ï¿½ ï¿½ ï¿½ ï¿½ app.UseHttpsRedirection();
 
+ï¿½ ï¿½ ï¿½ ï¿½ app.UseMvc();
+
+ï¿½ ï¿½ }
+
+
+
+
+The value of **apiErrorSettings**ï¿½ define the settings for error handling. It is optional.
 
 
 
@@ -123,30 +122,36 @@ Now you are set up. The middleware will automatically catch all errors and retur
 
 
 
-    [Route("not-found")]
+ï¿½ ï¿½ [Route("not-found")]
 
-    public async Task<IActionResult> NotFound()
+ï¿½ ï¿½ public async Task<IActionResult> NotFound()
 
-    {
+ï¿½ ï¿½ {
 
-        return ApiResponse.NotFound("Not found error");
+ï¿½ ï¿½ ï¿½ ï¿½ return ApiResponse.NotFound("Not found error");
 
-    }
-
-
+ï¿½ ï¿½ }
 
 
-    [Route("bad-request")]
-
-    public async Task<IActionResult> BadRequest()
-
-    {
-
-        return ApiResponse.BadRequest("Bad request error");
-
-    }
 
 
+ï¿½ ï¿½ [Route("bad-request")]
+
+ï¿½ ï¿½ public async Task<IActionResult> BadRequest()
+
+ï¿½ ï¿½ {
+
+ï¿½ ï¿½ ï¿½ ï¿½ return ApiResponse.BadRequest("Bad request error");
+
+ï¿½ ï¿½ }
+
+
+    
+    [Route("internal-server-error")]
+    public async Task<IActionResult> InteernalServerError()
+    {
+        return ApiResponse.InternalServerError("Internal Server error");
+    }
 
 
 There are other methods with other error codes supported. If you cannot find a supported one, you can request an addition or just use InternalServerError method.
