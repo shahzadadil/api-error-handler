@@ -1,3 +1,5 @@
+
+
 # API Error Handler [![Build Status](https://shahzadadil.visualstudio.com/API%20Error%20Handler/_apis/build/status/Master%20Branch%20CI?branchName=master)](https://shahzadadil.visualstudio.com/API%20Error%20Handler/_build/latest?definitionId=7&branchName=master)
 
 Error handling is a cumbersome task and often neglected. That leads to fragmentation and inconsistent responses. This aims to handle the problem. It provides an error framework which can just be plugged in with a few lines of code and you are set to go.
@@ -9,7 +11,7 @@ This repo targets to tackle the issue and provides with a framework to seamlessl
 
 ## What It Does
 
-It allows you to just register a middleware to handle all exceptions and to send responses back in a consistent manner that is the same for all generated errors. No need to worry about anything related to how errors will be handled.�
+It allows you to just register a middleware to handle all exceptions and to send responses back in a consistent manner that is the same for all generated errors. No need to worry about anything related to how errors will be handled.
 
 
 
@@ -28,7 +30,7 @@ The framework for API comes bundled in a NuGet package. Download NuGetPackage
 
 
 
-� � Basket.Api.Framework
+  Basket.Api.Framework
 
 
 
@@ -45,73 +47,63 @@ The framework has a middleware inbuilt to handle all errors and you do not need 
 
 
 
-� � public virtual void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiErrorSettings apiErrorSettings)
+ 
 
-� � {
+    
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
-� � � � // Initialise settings if you need to change anything, if not provided
+        public IConfiguration Configuration { get; }
 
-� � � � // This is optional. You can also choose to pass null
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public virtual void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+        }
 
-� � � � if (apiErrorSettings == null)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public virtual void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiErrorSettings apiErrorSettings = null)
+        {
+            // Initialise settings if you need to change anything, if not provided
+            if (apiErrorSettings == null)
+            {
+                apiErrorSettings = new ApiErrorSettings
+                {
+                    Serialization = new SerializationSettings
+                    {
+                        UseCamelCase = true
+                    },
+                    Message = new Basket.Framework.Error.MessageSettings
+                    {
+                        IncludeExceptionDetail = true
+                    },
+                    Logging = new Basket.Framework.Logging.LoggingSettings
+                    {
+                        ShouldLogErrors = true
+                    }
+                };
+            }
+			
+			// Registration happens here!
+            app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
 
-� � � � {
+            if (!env.IsDevelopment())
+            {
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
 
-� � � � � � apiErrorSettings = new ApiErrorSettings
-
-� � � � � � {
-
-� � � � � � � � Serialization = new SerializationSettings
-
-� � � � � � � � {
-
-� � � � � � � � � � UseCamelCase = true
-
-� � � � � � � � },
-
-� � � � � � � � Message = new Basket.Framework.Error.MessageSettings
-
-� � � � � � � � {
-
-� � � � � � � � � � IncludeExceptionDetail = true
-
-� � � � � � � � }
-
-� � � � � � };
-
-� � � � }
-
-
-
-
-� � � � app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
-
-
-
-
-� � � � if (!env.IsDevelopment())
-
-� � � � {
-
-� � � � � � // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-
-� � � � � � app.UseHsts();
-
-� � � � }
-
-
-
-
-� � � � app.UseHttpsRedirection();
-
-� � � � app.UseMvc();
-
-� � }
+            app.UseHttpsRedirection();
+            app.UseMvc();
+        }
+    }
 
 
-
-
-The value of **apiErrorSettings**� define the settings for error handling. It is optional.
+The value of **apiErrorSettings** define the settings for error handling. It is optional.
 
 
 
@@ -122,36 +114,48 @@ Now you are set up. The middleware will automatically catch all errors and retur
 
 
 
-� � [Route("not-found")]
+  
+        [Route("not-found")]
+        public async Task<IActionResult> NotFound()
+        {
+            return ApiResponse.NotFound("Not found error");
+        }
 
-� � public async Task<IActionResult> NotFound()
+        [Route("bad-request")]
+        public async Task<IActionResult> BadRequest()
+        {
+            return ApiResponse.BadRequest("Bad request error");
+        }
 
-� � {
+        [Route("forbidden")]
+        public async Task<IActionResult> Forbidden()
+        {
+            return ApiResponse.Forbidden("Forbidden error");
+        }
 
-� � � � return ApiResponse.NotFound("Not found error");
+        [Route("no-content")]
+        public async Task<IActionResult> NoContent()
+        {
+            return ApiResponse.NoContent("No content error");
+        }
 
-� � }
+        [Route("unauthorized")]
+        public async Task<IActionResult> Unauthorized()
+        {
+            return ApiResponse.Unauthorized("Unauthorized error");
+        }
 
+        [Route("conflict")]
+        public async Task<IActionResult> Conflict()
+        {
+            return ApiResponse.Conflict("Conflict error");
+        }
 
-
-
-� � [Route("bad-request")]
-
-� � public async Task<IActionResult> BadRequest()
-
-� � {
-
-� � � � return ApiResponse.BadRequest("Bad request error");
-
-� � }
-
-
-    
-    [Route("internal-server-error")]
-    public async Task<IActionResult> InteernalServerError()
-    {
-        return ApiResponse.InternalServerError("Internal Server error");
-    }
+        [Route("internal-server-error")]
+        public async Task<IActionResult> InternalServerError()
+        {
+            return ApiResponse.InternalServerError("Internal Server error");
+        }
 
 
 There are other methods with other error codes supported. If you cannot find a supported one, you can request an addition or just use InternalServerError method.
@@ -176,18 +180,13 @@ The response data for the errors are returned in the format below
 
 
 |Parameter| Type |
-
 |--|--|
-
 | message | string |
-
 | description | string |
-
 | exception | object|
-
 | statusCode | 	number|
+| metadata | key-value pair of string and object|
 
-| metadata | key-value pair of string and object
 
 
 
