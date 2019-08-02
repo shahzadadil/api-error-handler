@@ -4,7 +4,7 @@
 
 Error handling is a cumbersome task and often neglected. That leads to fragmentation and inconsistent responses. This aims to handle the problem. It provides an error framework which can just be plugged in with a few lines of code and you are set to go.
 
-This repo targets to tackle the issue and provides with a framework to seamlessly handle the error and send responses back in a consistent structure that is fixed for all errors. Devs now don't have to worry about error handling or setting up a framework to do that or deciding on a structure. Everything is done to just get you started. It also provides a middleware just to allow you to register it and you are done :)
+This repository targets to tackle the issue and provides with a framework to seamlessly handle the error and send responses back in a consistent structure that is fixed for all errors. Devs now don't have to worry about error handling or setting up a framework to do that or deciding on a structure. Everything is done to just get you started. It also provides a middleware just to allow you to register it and you are done :)
 
 
 
