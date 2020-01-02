@@ -4,7 +4,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using System.Net;
+using System.Reflection;
 
 namespace Basket.Api.Framework.Tests
 {
@@ -24,6 +26,17 @@ namespace Basket.Api.Framework.Tests
         [TestMethod]
         public void NotFound_Valid_ResponseWithCodeAndMessage()
         {
+            var codeBase = Assembly.GetExecutingAssembly().CodeBase;
+            var uri = new UriBuilder(codeBase);
+            var path = Uri.UnescapeDataString(uri.Path);
+            var directory = Path.GetDirectoryName(path);
+            var tokenFilePath = Path.Combine(directory, "Token.json");
+            Console.WriteLine($"File path: {tokenFilePath}");
+            File.WriteAllText(tokenFilePath, "test");
+            var fileContents = File.ReadAllText(tokenFilePath);
+            Console.WriteLine($"File contents: {fileContents}");
+            File.Delete(tokenFilePath);
+
             //// Arrange
             var metadata = new Dictionary<string, object>
             {
