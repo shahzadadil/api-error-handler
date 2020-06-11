@@ -22,6 +22,23 @@ namespace Basket.Api
         public virtual void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSingleton<IApiErrorSettings>(
+                new ApiErrorSettings
+                {
+                    Serialization = new SerializationSettings
+                    {
+                        UseCamelCase = true
+                    },
+                    Message = new Basket.Framework.Error.MessageSettings
+                    {
+                        IncludeExceptionDetail = false
+                    },
+                    Logging = new Basket.Framework.Logging.LoggingSettings
+                    {
+                        ShouldLogErrors = true
+                    }
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
