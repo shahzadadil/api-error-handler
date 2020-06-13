@@ -1,9 +1,9 @@
-﻿using Basket.Api.Framework;
+﻿using System.Net.Http;
+using Basket.Api.Framework;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Net.Http;
 
 namespace Basket.Api.IntegrationTests
 {
@@ -32,9 +32,9 @@ namespace Basket.Api.IntegrationTests
             _ApiClient = _ApiFactory.WithWebHostBuilder(
                 builder =>
                 {
-                    builder.ConfigureServices(services =>
+                    builder.ConfigureTestServices(services =>
                     {
-                        services.Add(new ServiceDescriptor(typeof(IApiErrorSettings), apiErrorSettings));
+                        services.AddSingleton<IApiErrorSettings>(apiErrorSettings);
                     });
                 })
                 .CreateClient();
