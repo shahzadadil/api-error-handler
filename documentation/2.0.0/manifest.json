@@ -1,0 +1,428 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Controllers.ErrorController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Controllers.ErrorController.html",
+          "hash": "O/qQ7Ih5wvGjDB5+B/Ab3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Controllers.html",
+          "hash": "Zen6fynaONo3TerLY51Qgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.ErrorSettingsTests.IntegrationTests.MessageSettingsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.ErrorSettingsTests.IntegrationTests.MessageSettingsTests.html",
+          "hash": "UdnyGkJlRVroI3yQM+/NXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.ErrorSettingsTests.IntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.ErrorSettingsTests.IntegrationTests.html",
+          "hash": "b1NwOTLv6NtXop6wqJxQcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.ApiErrorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.ApiErrorSettings.html",
+          "hash": "EauB1KVYW39CYl7TlOgPEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.ApiResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.ApiResponse.html",
+          "hash": "uQp76cIVZAwe4p3aW4g/JA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.ApiResponseFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.ApiResponseFactory.html",
+          "hash": "gMJH95tKbo+gr4oVSlVOSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.BasketMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.BasketMiddleware.html",
+          "hash": "5GLMwUsRcFXANTxbjQGemg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.IApiErrorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.IApiErrorSettings.html",
+          "hash": "Bxj9R5T1AKb6yTbN0l/iLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.SerializationSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.SerializationSettings.html",
+          "hash": "gzGvy8/fw5FeT/rH9mhpCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.Tests.ApiResponseTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.Tests.ApiResponseTests.html",
+          "hash": "m23+nkTTmx7VEFoP3wxsUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.Tests.html",
+          "hash": "fmu/q+MGjnEEjJt2mlsLoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Framework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Framework.html",
+          "hash": "3wTGIWUAt5WgndV9bn6bKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.IntegrationTests.ApiTestBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.IntegrationTests.ApiTestBase.html",
+          "hash": "bMVCPjBNp4pP/8471qF6fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.IntegrationTests.ErrorControllerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.IntegrationTests.ErrorControllerTests.html",
+          "hash": "lOcZcNi4DQUnKirSyx7Etw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.IntegrationTests.ErrorSettingsTests.LoggingSettingsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.IntegrationTests.ErrorSettingsTests.LoggingSettingsTests.html",
+          "hash": "vNvbRQW/8Zb12/V1hgzKcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.IntegrationTests.ErrorSettingsTests.SerializationSettingsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.IntegrationTests.ErrorSettingsTests.SerializationSettingsTests.html",
+          "hash": "erN3C/hclEIpQ5CK7wX6rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.IntegrationTests.ErrorSettingsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.IntegrationTests.ErrorSettingsTests.html",
+          "hash": "pY6dnVhof1e55xhOV6j/lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.IntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.IntegrationTests.html",
+          "hash": "x7FliuoetlYf8l0w1eKE9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Program.html",
+          "hash": "hGPBGQsMdY7fa2sPywah0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.Startup.html",
+          "hash": "wAspNVeRyxOi168+nUj04g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Api.html",
+          "hash": "DNG+5ouot06yQKnXItRwGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Framework.Error.ErrorDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Framework.Error.ErrorDetail.html",
+          "hash": "zFhFNAgMut316vCPXM3YNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Framework.Error.ErrorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Framework.Error.ErrorFactory.html",
+          "hash": "GuPsyTVUy+gJGKZ7/Wcgww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Framework.Error.ErrorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Framework.Error.ErrorSettings.html",
+          "hash": "hXS7l4sp/332RhGVbzb7xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Framework.Error.MessageSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Framework.Error.MessageSettings.html",
+          "hash": "FPpbfWTwAHLKJ74F9N9lPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Framework.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Framework.Error.html",
+          "hash": "Vws18uvLeUK2/Rk9fRcweA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Framework.Logging.LoggingSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Framework.Logging.LoggingSettings.html",
+          "hash": "nSFJPcVHsATdesVHqo5JVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Basket.Framework.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Basket.Framework.Logging.html",
+          "hash": "j+QpWllk7X3jw5QVD1W/PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "GVJYPz7TAZe3li1HE2JDsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Alq+jPgAAvB65tzhJhY0JQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 29,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
