@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Shahzad Adil</Authors>
@@ -16,9 +16,9 @@ Contains support for error handling middleware, factory methods for responses, l
     <PackageIconUrl>https://raw.githubusercontent.com/shahzadadil/api-error-handler/release/Resources/Images/basket-icon-100.png</PackageIconUrl>
     <RepositoryType>Public</RepositoryType>
     <PackageTags>global,exception,api,dotnet,core,error,handler,.net,standard,.net-standard,middleware,exception.response,package,logging,trace,tracing,ilogger</PackageTags>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
-    <Version>1.0.4</Version>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <Version>2.0.0</Version>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
     <AssemblyOriginatorKeyFile>BasketCertificate.pfx</AssemblyOriginatorKeyFile>
@@ -29,7 +29,7 @@ Logging support to automatically log messages using the registered loggers witho
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,10 +1,10 @@
-﻿using Basket.Api.Framework;
+﻿using System.Diagnostics.CodeAnalysis;
+using Basket.Api.Framework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Basket.Api
 {
@@ -21,48 +21,20 @@ namespace Basket.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public virtual void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc((options) =>
+            {
+                options.EnableEndpointRouting = false;
+            });
 
-            services.AddSingleton<IApiErrorSettings>(
-                new ApiErrorSettings
-                {
-                    Serialization = new SerializationSettings
-                    {
-                        UseCamelCase = true
-                    },
-                    Message = new Basket.Framework.Error.MessageSettings
-                    {
-                        IncludeExceptionDetail = false
-                    },
-                    Logging = new Basket.Framework.Logging.LoggingSettings
-                    {
-                        ShouldLogErrors = true
-                    }
-                });
+            services.AddSingleton<IApiErrorSettings>(BuildDefaultApiErrorSettings());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public virtual void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiErrorSettings apiErrorSettings = null)
+        public virtual void Configure(
+            IApplicationBuilder app, 
+            IHostingEnvironment env, 
+            IApiErrorSettings apiErrorSettings)
         {
-            // Initialise settings if you need to change anything, if not provided
-            if (apiErrorSettings == null)
-            {
-                apiErrorSettings = new ApiErrorSettings
-                {
-                    Serialization = new SerializationSettings
-                    {
-                        UseCamelCase = true
-                    },
-                    Message = new Basket.Framework.Error.MessageSettings
-                    {
-                        IncludeExceptionDetail = true
-                    },
-                    Logging = new Basket.Framework.Logging.LoggingSettings
-                    {
-                        ShouldLogErrors = true
-                    }
-                };
-            }
 
             app.UseMiddleware<BasketMiddleware>(apiErrorSettings);
 
@@ -74,6 +46,25 @@ namespace Basket.Api
 
             app.UseHttpsRedirection();
             app.UseMvc();
+        }
+
+        private IApiErrorSettings BuildDefaultApiErrorSettings()
+        {
+            return new ApiErrorSettings
+            {
+                Serialization = new SerializationSettings
+                {
+                    UseCamelCase = true
+                },
+                Message = new Basket.Framework.Error.MessageSettings
+                {
+                    IncludeExceptionDetail = false
+                },
+                Logging = new Basket.Framework.Logging.LoggingSettings
+                {
+                    ShouldLogErrors = true
+                }
+            };
         }
     }
 }
